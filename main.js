@@ -27,15 +27,23 @@ let scoreHTML = document.querySelector("#score");
 let randomWord = document.querySelector("#randomWord");
 let timeSpan = document.querySelector("#timeSpan");
 let timeInterval = setInterval(actualizarTiempo, 1000);
+let palabraIngresada = document.querySelector("input");
+
+document.querySelector("input").addEventListener('keyup', function () {
+
+  let input = palabraIngresada.value
 
 
-document.querySelector("input").addEventListener('keypress', function (e) {
-  let palabraIngresada = "";
-  if (palabraIngresada == palabraAleatoria) {
+
+  if (input === palabraAleatoria) {
     time += 3;
-    input = "";
-  } else { addToDOM(); }
-  console.log(e);
+    palabraIngresada.value = "";
+    updateScore();
+    randomWords();
+    addToDOM();
+    console.log("PROBANDO");
+  }
+  return console.log(palabraIngresada.value);
 })
 
 function randomWords() {
@@ -61,8 +69,7 @@ function updateScore() {
   scoreHTML.textContent = score;
 }
 
-randomWords();
 actualizarTiempo();
-updateScore();
+randomWords();
+addToDOM();
 
-console.log(palabraAleatoria);
