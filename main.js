@@ -36,7 +36,7 @@ document.querySelector("input").addEventListener('keyup', function () {
 
 
   if (input === palabraAleatoria) {
-    time += 3;
+    time += 1;
     palabraIngresada.value = "";
     updateScore();
     randomWords();
@@ -58,6 +58,8 @@ function addToDOM() {
 function actualizarTiempo() {
   if (time === 0) {
     clearInterval(timeInterval)
+
+    alert("Se te termino el tiempo!!")
   } else {
     time -= 1;
     timeSpan.textContent = time + "s";
@@ -68,7 +70,6 @@ function updateScore() {
   score += 1;
   scoreHTML.textContent = score;
 }
-
 actualizarTiempo();
 randomWords();
 addToDOM();
