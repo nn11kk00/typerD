@@ -11,13 +11,14 @@ const words = [
   'love',
   'getaway',
   'stadium',
-  'quixoticelixer',
   'quarter',
   'snow',
   'dylan',
   'zephyr',
   'funky',
-  'chili'
+  'chili',"que","de","no","a","la","el","es","y","en",
+  "hubiese","bebe","tanta","oeste","rose","necesidad","naves","descubrir","tira","resolver""sufrir","mental","lograr","instituto","um","serlo","rapido","plato","llorando","vd","rutina","gustar","empieces",
+  "lleguemos","interrumpir","haberla","apropiado","presentimiento","intentamos","finales","evitar"
 ];
 
 let palabraAleatoria = "";
