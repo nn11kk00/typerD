@@ -8,6 +8,7 @@ let randomWord = document.querySelector("#randomWord");
 let timeSpan = document.querySelector("#timeSpan");
 let timeInterval = setInterval(actualizarTiempo, 1000);
 let palabraIngresada = document.querySelector("input");
+let numerosWords = words.length - 1;
 
 document.querySelector("input").addEventListener('keyup', function () {
 
@@ -27,7 +28,7 @@ document.querySelector("input").addEventListener('keyup', function () {
 })
 
 function randomWords() {
-  let i = parseInt(Math.random() * (words.length-1))
+  let i = parseInt(Math.random() * numerosWords)
   return palabraAleatoria = words[i]
 }
 
