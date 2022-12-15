@@ -40,7 +40,10 @@ function actualizarTiempo() {
   if (time === 0) {
     clearInterval(timeInterval)
 
-    alert("Se te termino el tiempo!!")
+    alert(`
+    Se termino el tiempo!! 
+    Tu puntaje fue de : ${scoreHTML.textContent} puntos
+    `)
   } else {
     time -= 1;
     timeSpan.textContent = time + "s";
