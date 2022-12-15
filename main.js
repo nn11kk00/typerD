@@ -1,7 +1,7 @@
 const words = ['californication', 'plataforma5', 'black', 'summer', 'flea', 'aeroplane', 'peppers', 'unlimited', 'arcadium', 'love', 'getaway', 'stadium', 'quarter', 'snow', 'dylan', 'zephyr', 'funky', 'chili', 'que', 'de', 'no', 'a', 'la', 'el', 'es', 'y', 'en', 'hubiese', 'bebe', 'tanta', 'oeste', 'rose', 'necesidad', 'naves', 'descubrir', 'tira', 'resolver', 'sufrir', 'mental', 'lograr', 'instituto', 'um', 'serlo', 'rapido', 'plato', 'llorando', 'vd', 'rutina', 'gustar', 'empieces', 'lleguemos', 'interrumpir', 'haberla', 'apropiado', 'presentimiento', 'intentamos', 'finales', 'evitar',];
 
 let palabraAleatoria = "";
-let time = 10;
+let time = 11;
 let score = 0;
 let scoreHTML = document.querySelector("#score");
 let randomWord = document.querySelector("#randomWord");
