@@ -3,17 +3,35 @@
   padding: 0;
 }
 
+p,
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+p {
+  padding-top: 1em;
+}
+
+input {
+  margin: 1em 0;
+  font-size: large;
+}
 
 .container {
   text-align: center;
   margin: 1% auto 0;
   width: 300px;
+  padding: 1em;
   background-color: whitesmoke;
   border: 2px solid grey;
+  border-radius: 15px;
 }
+
+
 
 
 /*bg*/
 body {
-  background-color: beige;
+  background-image: url("bg.jpg");
 }
