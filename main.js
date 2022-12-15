@@ -27,7 +27,7 @@ document.querySelector("input").addEventListener('keyup', function () {
 })
 
 function randomWords() {
-  let i = parseInt(Math.random() * 18)
+  let i = parseInt(Math.random() * (words.length-1))
   return palabraAleatoria = words[i]
 }
 
